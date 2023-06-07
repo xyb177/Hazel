@@ -26,7 +26,7 @@ project "Hazel"
 	}
 
 	includedirs
-	{
+	{	"%{prj.name}.src"
 		"%{prj.name}/vendor/spdlog/include;"
 	}
 
@@ -34,7 +34,7 @@ project "Hazel"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "lastest"
 
 	defines {
 		"HZ_PLATFORM_WINDOWS",
