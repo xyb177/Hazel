@@ -16,6 +16,7 @@ namespace Hazel {
 		{
 			std::stringstream ss;
 			ss << "MouseMovedEvent: " << m_MouseX << "," << m_MouseY;
+			return ss.str();
 		}
 		EVENT_CLASS_TYPE(MouseMoved)
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
@@ -86,5 +87,7 @@ namespace Hazel {
 			ss << "MouseButtonReleasedEvent: " << m_Button;
 			return ss.str();
 		}
+
+		EVENT_CLASS_TYPE(MouseButtonReleased)
 	};
 }
